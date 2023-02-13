@@ -8,7 +8,7 @@ export default function Input(){
 
     useEffect(()=>{
         document.title = name+" "+lastName;
-    },[]);
+    },[name, lastName]);
 
     useEffect(()=> {
         const timer = setInterval(() => {
